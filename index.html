@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Layout Clone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="header-left">
+      <button class="icon-btn" id="hamburgerBtn" aria-label="Menu">
+        <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <a href="#" class="logo">
+        <svg viewBox="0 0 90 20" class="logo-icon" width="90" height="20">
+          <path d="M27.9727 3.12324C27.6435 1.89323 26.6768 0.926623 25.4468 0.597366C23.2197 0 14.285 0 14.285 0C14.285 0 5.35042 0 3.12323 0.597366C1.89323 0.926623 0.926623 1.89323 0.597366 3.12324C0 5.35042 0 10 0 10C0 10 0 14.6496 0.597366 16.8768C0.926623 18.1068 1.89323 19.0734 3.12323 19.4026C5.35042 20 14.285 20 14.285 20C14.285 20 23.2197 20 25.4468 19.4026C26.6768 19.0734 27.6435 18.1068 27.9727 16.8768C28.5701 14.6496 28.5701 10 28.5701 10C28.5701 10 28.5675 5.35042 27.9727 3.12324Z" fill="#FF0000"/>
+          <path d="M11.4253 14.2854L18.8477 10.0004L11.4253 5.71533V14.2854Z" fill="white"/>
+        </svg>
+        <span class="logo-text">YouTube<sup>IN</sup></span>
+      </a>
+    </div>
+
+    <div class="header-center">
+      <form class="search-form" role="search">
+        <input type="text" class="search-input" placeholder="Search" aria-label="Search" />
+        <button type="submit" class="search-btn" aria-label="Search">
+          <svg viewBox="0 0 24 24" width="22" height="22"><path d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+        </button>
+      </form>
+      <button class="icon-btn mic-btn" aria-label="Search with your voice">
+        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z" fill="currentColor"/><path d="M19 10v2a7 7 0 01-14 0v-2M12 19v4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+
+    <div class="header-right">
+      <button class="icon-btn" aria-label="Create">
+        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="icon-btn" aria-label="Notifications">
+        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+      </button>
+      <div class="avatar" title="Your account">Y</div>
+    </div>
+  </header>
+
+  <div class="app-body">
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar" id="sidebar">
+      <nav>
+        <ul class="nav-group">
+          <li class="nav-item active" data-label="Home">
+            <span class="nav-icon">🏠</span><span class="nav-text">Home</span>
+          </li>
+          <li class="nav-item" data-label="Shorts">
+            <span class="nav-icon">⚡</span><span class="nav-text">Shorts</span>
+          </li>
+          <li class="nav-item" data-label="Subscriptions">
+            <span class="nav-icon">📺</span><span class="nav-text">Subscriptions</span>
+          </li>
+        </ul>
+        <hr class="divider" />
+        <ul class="nav-group">
+          <li class="nav-item" data-label="You"><span class="nav-icon">👤</span><span class="nav-text">You</span></li>
+          <li class="nav-item" data-label="History"><span class="nav-icon">🕒</span><span class="nav-text">History</span></li>
+          <li class="nav-item" data-label="Playlists"><span class="nav-icon">▶️</span><span class="nav-text">Playlists</span></li>
+          <li class="nav-item" data-label="Watch later"><span class="nav-icon">⏱️</span><span class="nav-text">Watch later</span></li>
+          <li class="nav-item" data-label="Liked videos"><span class="nav-icon">👍</span><span class="nav-text">Liked videos</span></li>
+        </ul>
+        <hr class="divider" />
+        <p class="nav-heading">Subscriptions</p>
+        <ul class="nav-group">
+          <li class="nav-item" data-label="Code with Zoya"><span class="nav-icon">🟣</span><span class="nav-text">Code with Zoya</span></li>
+          <li class="nav-item" data-label="Travel Diaries"><span class="nav-icon">🟢</span><span class="nav-text">Travel Diaries</span></li>
+          <li class="nav-item" data-label="Music Box"><span class="nav-icon">🟠</span><span class="nav-text">Music Box</span></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="main">
+      <div class="chips" id="chips">
+        <button class="chip active">All</button>
+        <button class="chip">Music</button>
+        <button class="chip">Gaming</button>
+        <button class="chip">React JS</button>
+        <button class="chip">Cooking</button>
+        <button class="chip">Travel vlogs</button>
+        <button class="chip">Web development</button>
+        <button class="chip">Podcasts</button>
+        <button class="chip">Comedy</button>
+        <button class="chip">News</button>
+        <button class="chip">Live</button>
+      </div>
+
+      <section class="video-grid" id="videoGrid">
+        <!-- Video cards are injected by script.js -->
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
